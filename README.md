@@ -9,3 +9,5 @@ ifba-workspace: tudo das aulas de estrutura de dados com Igor Costa, no meu 4° 
 home-workspace: códigos complementares ao IFBA em casa
 
 course: parte complementar ao meu aprendizado de estrutua de dados
+
+master: exercício/desafios/atividades
