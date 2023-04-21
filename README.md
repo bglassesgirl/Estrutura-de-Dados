@@ -1,6 +1,6 @@
 # Estrutura-de-Dados
 
-- Guia de navegação entre as branchs:
+- Guia de navegação entre as branches:
 
 MAIN: os principais projeto 
 
