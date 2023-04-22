@@ -2,7 +2,7 @@
 
 - Guia de navegação entre as branches:
 
-MAIN: os principais projeto 
+main: os principais projeto 
 
 ifba-workspace: tudo das aulas de estrutura de dados com Igor Costa, no meu 4° de INFO no IFBA
 
