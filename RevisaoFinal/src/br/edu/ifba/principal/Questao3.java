@@ -14,27 +14,28 @@ public class Questao3 {
 		
 		int[] numeros = new int[tamanho];
 		
-		/*
-		 * para preencher o valor poderia ser 
-		 * 
-		 * int[] numeros = {1,2,3,4,5,6,7,8,9,10];
-		 * --> assim estou atribuindo valores a posicao do vetor
-		 */
+		Servico s = new Servico();
 		
-		
-		System.out.println("Digite o valor mínimo do vetor: ");
+		for (int i = 0; i < numeros.length; i++) {
+			numeros[i] = in.nextInt();
+		}
+	
+		System.out.println("Digite o valor mÃ­nimo do vetor: ");
 		int mini = in.nextInt();
 		
 		System.out.println("Digite o valor maximo do vetor: ");
 		int maxi = in.nextInt();
 		
-		
+		/*
 		for (int cont = mini; cont <= maxi; cont++ ) {
 		       System.out.println(numeros[cont]);
 		}
+		 */
 		
+		int[] vetor = s.encontrarIntervalo(numeros, mini, maxi);
 		
-		
+		System.out.println(Arrays.toString(vetor));
+		System.out.println(Arrays.toString(s.encontrarIntervalo(vetor, in.nextInt(), in.nextInt())));
  	
 	}
 }
