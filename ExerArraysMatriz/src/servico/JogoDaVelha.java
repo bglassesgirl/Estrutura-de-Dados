@@ -3,7 +3,7 @@ package servicos;
 public class JogoDaVelha {
 	
 	public void printTab(char[][] tab) {
-	  System.out.println("--------------");
+	  System.out.println("-   -   -   -");
 		
 	   for (int l = 0; l < tab.length; l++) {
 		   System.out.print("| ");
@@ -11,7 +11,7 @@ public class JogoDaVelha {
 		       System.out.print(tab[l][c] + " | ");
 			}
 			  System.out.println();
-			  System.out.println("--------------");
+			  System.out.println("-   -   -   -");
 			
 		  }
 	}
