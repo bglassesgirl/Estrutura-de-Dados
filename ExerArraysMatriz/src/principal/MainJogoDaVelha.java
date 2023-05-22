@@ -13,7 +13,15 @@ Scanner in = new Scanner(System.in);
 	   char jogador = 'X';
 	   boolean gameOver = false;
 	   JogoDaVelha jv = new JogoDaVelha();
-	   
+	
+           System.out.println(" -- Jogo da Velha -- ");
+           System.out.println("            ------            ");
+           System.out.println(" - regras do jogo: \n"
+       		           + "() escolha um jogador (x or o);\n"
+       		           + "() seu objetivo é fechar uma linha, coluna ou um cruzamento \n"
+       		           + "() o primeiro jogador que fechar um dos itens mencionados acima, ganha;)\n"
+       		           + "() seja bem vindo(a), boa sorte!\n"
+       		           + "---------------------------------------\n");
 	   
 	   for (int l = 0; l < tab.length; l++) {
 		  for (int c = 0; c < tab[l].length; c++) {
