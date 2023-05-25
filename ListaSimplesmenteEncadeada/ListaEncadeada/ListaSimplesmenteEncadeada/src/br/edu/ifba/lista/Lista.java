@@ -30,3 +30,37 @@ public class Lista {
 	}
 	
 }
+public void adicionarNoFinal(Object elemento) {
+		
+		if (totalElementos == 0) {
+			this.adicionarNoComeco(elemento);
+		} else {
+			Celula celulaNova = new Celula(elemento);
+			this.ultima.setProxima(celulaNova);
+			this.ultima = celulaNova;
+			this.totalElementos++;
+		}
+	}
+	
+	public void adicionarPorPosicao(int posicao, Object elemento) {
+
+		if (posicao == 0) {
+			this.adicionarNoComeco(elemento);
+
+		} else if (posicao == this.totalElementos) {
+			this.adicionarNoFinal(elemento);
+			
+		} else {
+			
+		    Celula auxiliar = this.primeira;
+		    for (int i = 0; i < posicao-1; i++) {
+				auxiliar = auxiliar.getProxima();
+			
+			}
+		    Celula novaCelula = new Celula(auxiliar.getProxima(), elemento);
+		    auxiliar.setProxima(novaCelula);
+		    this.totalElementos++;
+		}
+	}
+
+}
