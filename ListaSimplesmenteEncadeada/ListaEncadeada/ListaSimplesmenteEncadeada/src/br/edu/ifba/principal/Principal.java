@@ -14,6 +14,24 @@ public class Principal {
 		lista.adicionarNoComeco("Igor");
 		
 		lista.listar();
+		System.out.println();
+		
+		lista.adicionarNoFinal("Maria Luiza");
+		lista.adicionarNoFinal("Jennie");
+		
+		
+		lista.listar();
+		System.out.println();
+		
+		lista.adicionarPorPosicao(0, "Lorena");
+		lista.adicionarPorPosicao(1, "Giovana");
+		
+		lista.listar();
+		System.out.println();
+		
+		
 	}
 	
 }
+
+
