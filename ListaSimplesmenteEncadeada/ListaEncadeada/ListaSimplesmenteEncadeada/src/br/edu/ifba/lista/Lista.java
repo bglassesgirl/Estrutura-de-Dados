@@ -63,4 +63,49 @@ public void adicionarNoFinal(Object elemento) {
 		}
 	}
 
+   public void removeDoComeco() {
+		
+		Celula aux = this.primeira;
+		this.primeira = this.primeira.getProxima();
+
+		aux.setProxima(null);
+		totalElementos--;
+
+	}
+	
+    public void removeFinal() {
+
+    	Celula remove = this.primeira;
+    		for (int i = 0; i < this.totalElementos - 2; i++) {
+    			remove = remove.getProxima();
+    		}
+    		
+    		remove.setProxima(null);
+    		this.ultima = remove;
+    		this.totalElementos--;
+    	}
+    
+
+	public void removePosicao (int pos) {			
+		
+		if (pos == 0) {
+			this.removeDoComeco();
+			
+		}else if (pos == this.totalElementos) {
+			this.removeFinal();;
+		
+		}else {		
+	
+			Celula anterior = this.primeira;
+			for (int i = 0; i < pos - 1; i++) {
+				anterior = anterior.getProxima();
+			}
+			
+			anterior.setProxima(anterior.getProxima().getProxima());
+			anterior.getProxima();
+			this.totalElementos--;
+		
+		}				
+	}	
+
 }
