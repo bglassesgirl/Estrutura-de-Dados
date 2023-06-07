@@ -23,6 +23,21 @@ public class Lista {
 		}
 		
 	}
+	
+	  
+    public void adicionarFinal(Object elemento) {
+    	if (this.totalElementos == 0) {
+			adicionarNoComeco(elemento);
+    	} else {
+    		Celula  nova = new Celula();
+    		nova.setElemento(elemento);;
+    		this.ultima.setProximo(nova);
+    		nova.setAnterior(this.ultima);
+    		this.ultima = nova;
+    		this.totalElementos++;
+    	}
+    }
+    
       
     
     public String imprimir() {
