@@ -62,13 +62,9 @@ public class Celula {
 	}
 
 
-	@Override
-	public String toString() {
-		return "Celula [proximo=" + proximo + ", anterior=" + anterior + ", elemento=" + elemento + "]";
+       public void setElemento(Object elemento2) {
+		this.elemento = elemento2;
 	}
-	
-	
-	
 	
 	
 	
