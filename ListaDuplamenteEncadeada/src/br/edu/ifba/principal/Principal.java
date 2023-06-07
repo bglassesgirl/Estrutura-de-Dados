@@ -10,10 +10,11 @@ public class Principal {
 		Lista um = new Lista();
 		um.adicionarNoComeco("um");
 		um.adicionarNoComeco("dois");
-	    um.adicionarNoComeco("três");
+	        um.adicionarNoComeco("trÃªs");
 		
-		um.imprimir();
-		
+	        um.adicionarFinal("quatro");
+	     
+	        System.out.println(um.imprimir());
 	}
 
 }
