@@ -26,7 +26,7 @@ public class Celula {
 	}
 
 
-	public Celula(Celula elemento) {
+	public Celula(Object elemento) {
 		super();
 		this.elemento = elemento;
 	}
