@@ -38,7 +38,29 @@ public class Lista {
     	}
     }
     
-      
+    public void adicionaPos(int pos, Object elemento) {
+    	
+		if (pos == 0) {
+			this.adicionarNoComeco(elemento);
+		} else if (pos == this.totalElementos) {
+			this.adicionarFinal(elemento);
+		} else {
+			Celula aux = this.primeira;
+
+			for (int i = 0; i < pos - 1; i++) {
+				aux = aux.getProximo();
+			}
+
+			Celula nova = new Celula(elemento);
+			nova.setProximo(aux.getProximo());
+			nova.setAnterior(aux);
+			aux.getProximo().setAnterior(nova);
+			aux.setProximo(nova);
+			this.totalElementos++;
+
+		}
+	}
+   
     
     public String imprimir() {
     	
