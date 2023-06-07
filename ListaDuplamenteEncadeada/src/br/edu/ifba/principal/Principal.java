@@ -15,6 +15,10 @@ public class Principal {
 	        um.adicionarFinal("quatro");
 	     
 	        System.out.println(um.imprimir());
+		
+		 
+	       um.adicionaPos(2,"treze");
+	       System.out.println(um.imprimir());
 	}
 
 }
