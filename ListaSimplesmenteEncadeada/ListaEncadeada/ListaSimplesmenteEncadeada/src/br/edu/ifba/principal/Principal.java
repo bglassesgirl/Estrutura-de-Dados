@@ -13,7 +13,3 @@ public class Principal {
 		lista.adicionarNoComeco("Murilo");
 		lista.adicionarNoComeco("Igor");
 		
-		lista.listar();
-	}
-	
-}
